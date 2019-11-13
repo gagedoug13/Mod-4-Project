@@ -1,22 +1,69 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
 
 .App-link {
   color: #09d3ac;
+}
+
+.app {
+  /* border: 2px black solid; */
+  height: 100%;
+}
+
+.main {
+ background: black;
+}
+
+.main-image{
+  width: 25vw;
+  height: 25vh;
+  border: 1px black solid;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 10px;
+  margin-top: 10px;
+  background: black;
+}
+
+.card {
+  height: 45vh;
+  border: 2px grey solid;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: white;
+}
+
+.filterPage {
+  height: 40vh;
+  width: 100vw;
+}
+
+.filterPage {
+  background: url('https://www.naturefineartphotos.com/wp-content/uploads/2018/09/4945-eastern-sierras.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  align-content: space-around;
+}
+
+input {
+  font-size: 1.5vh;
+  font-family: 'Bitter', serif;
+  margin-right: 0.15vw;
+}
+
+form {
+  display: flex;  
+  align-items: space-evenly;
+}
+
+.logo {
+  border: 2px solid black;
 }
