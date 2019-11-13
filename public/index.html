@@ -25,6 +25,19 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 40%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
     <title>React App</title>
   </head>
   <body>
@@ -32,6 +45,9 @@
     <div id="root"></div>
     <button onclick="getLocation()">Try It</button>
     <p id="demo"></p>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8KZZQcWwvgVaErPux7jjl1RnsVs8EuTg&callback=initMap"
+    async defer></script>
+
 
     
     <!--

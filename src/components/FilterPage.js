@@ -13,7 +13,7 @@ export default function FilterPage(props) {
                     onChange={props.updateSearchTerm}
                     />
                 </form>
-            <img className='logo' src={line} alt="F"></img>
+            {/* <img className='logo' src={line} alt="F"></img> */}
         </div>
     )
 }

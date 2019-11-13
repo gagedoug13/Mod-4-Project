@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
 
+body {
+  overflow-x: hidden;
+}
 .App-link {
   color: #09d3ac;
 }
@@ -49,12 +52,13 @@
   background-position: center;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   align-content: space-around;
+  
 }
 
 input {
-  font-size: 1.5vh;
+  font-size: 2vh;
   font-family: 'Bitter', serif;
   margin-right: 0.15vw;
 }
@@ -66,4 +70,10 @@ form {
 
 .logo {
   border: 2px solid black;
+}
+
+.mapPage {
+  height: 40vh;
+  margin-top: 2vh;
+  margin-left: 1.3vh;
 }
