@@ -54,12 +54,12 @@ body {
   align-items: center;
   justify-content: center;
   align-content: space-around;
-  
+  height: 35vh;
 }
 
 input {
-  font-size: 2vh;
-  font-family: 'Bitter', serif;
+  font-size: 2.7vh;
+  font-family: 'Roboto', serif;
   margin-right: 0.15vw;
 }
 
@@ -79,3 +79,11 @@ form {
   margin-bottom: 20vh;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  background: darkred;
+  color: white;
+  font-family: 'Bitter', serif;
+
+}

@@ -2,8 +2,9 @@ import React from 'react'
 import FilterPage from './FilterPage'
 import CardContainer from './CardContainer'
 import MapPage from './MapPage'
+require('dotenv').config()
 
-const url = 'https://www.mtbproject.com/data/get-trails?lat=40.0274&lon=-105.2519&maxDistance=150&key=200636112-39345bcf829aba700988ea1d9f5718ab&maxResults=100'
+const url = `https://www.mtbproject.com/data/get-trails?lat=40.0274&lon=-105.2519&maxDistance=150&key=${process.env.REACT_APP_BIKING_KEY}&maxResults=1000`
 
 export default class Main extends React.Component {
 

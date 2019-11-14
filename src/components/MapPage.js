@@ -1,5 +1,6 @@
 import React from 'react'
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
+require('dotenv').config()
 
 
     export class MapPage extends React.Component {
@@ -7,6 +8,7 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
         hello = (url) => {
             window.location = url
         }
+
        
           
         displayMarkers = () => {
@@ -41,5 +43,5 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
 
 
     export default GoogleApiWrapper({
-        apiKey: 'AIzaSyB8KZZQcWwvgVaErPux7jjl1RnsVs8EuTg'
+        apiKey: `${process.env.REACT_APP_MAPS_KEY}`
     })(MapPage)
