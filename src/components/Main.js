@@ -28,6 +28,7 @@ export default class Main extends React.Component {
         searchTerm: event.target.value
       })
     }
+    
   
     componentDidMount() {
       fetch(url)
@@ -37,6 +38,8 @@ export default class Main extends React.Component {
       }))
     }
 
+   
+      
     
     
     
@@ -50,7 +53,7 @@ export default class Main extends React.Component {
             </div>
 
             <div className="mapPage">
-                <MapPage  />
+                <MapPage trails={this.state.trails} />
             </div>
 
             <div className="card-container">

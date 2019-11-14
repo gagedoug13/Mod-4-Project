@@ -7,7 +7,7 @@ import './App.css'
 export default class App extends React.Component {
   render() {
     return (
-      <div className="app">
+      <div className="App">
         <div className="header">
          
         </div>

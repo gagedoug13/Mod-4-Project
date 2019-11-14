@@ -1,5 +1,5 @@
 import React from 'react'
-import line from './line.png'
+// import line from './line.png'
 
 export default function FilterPage(props) {
     return (
