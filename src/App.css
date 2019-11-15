@@ -3,6 +3,8 @@
 
 body {
   overflow-x: hidden;
+  /* overflow-y: hidden; */
+  background: black;
 }
 .App-link {
   color: #09d3ac;
@@ -15,6 +17,7 @@ body {
 
 .main {
  background: black;
+ height: 100vh;
 }
 
 .main-image{
@@ -53,14 +56,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  align-content: space-around;
+  /* justify-content: space-evenly; */
   height: 35vh;
+  
 }
 
 input {
   font-size: 2.7vh;
   font-family: 'Roboto', serif;
   margin-right: 0.15vw;
+  width: 32vh;
 }
 
 form {
@@ -73,17 +78,46 @@ form {
 }
 
 .mapPage {
-  height: 40vh;
+  height: 20vh;
   margin-top: 1vh;
   margin-left: 1.3vh;
-  margin-bottom: 20vh;
+  margin-bottom: 50vh;
 }
 
 .header {
   display: flex;
   justify-content: center;
-  background: darkred;
+  /* background: darkred; */
   color: white;
   font-family: 'Bitter', serif;
 
 }
+
+button {
+  height: 4.5vh;
+  font-size: 2vh;
+  font-family: 'Roboto', serif;
+  margin-left: 0.3vh;
+  background: lightblue;
+}
+
+.body {
+  /* border: 5px white solid; */
+  display: flex;
+  justify-content: flex-start;
+  height: 70vh;
+  background: url('https://images.unsplash.com/photo-1545058746-b3cb62c0b05c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')80% no-repeat;
+  background-size: 65%; 
+  margin-left: -25vw;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+}
+
+.header {
+  height: 100%;
+  background: url('https://www.naturefineartphotos.com/wp-content/uploads/2018/09/4945-eastern-sierras.jpg') ;
+  background-size: cover;
+  background-position-y: 28%;
+}
+
+

@@ -26,10 +26,10 @@ require('dotenv').config()
 
             const mapStyles = {
                 width: '97.8%',
-                height: '60%',
+                height: '70%',
               };
           return (
-              <Map
+              <Map className="actualMap"
                 google={this.props.google}
                 zoom={8}
                 style={mapStyles}
