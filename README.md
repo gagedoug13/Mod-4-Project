@@ -1,4 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to My Line! With this app, you can view all mountain biking trails within a 150 mile radius of Denver Colorado. As a user, you have the ability to 
+
+    -view all trails
+    -filter trails by trail name
+    -filter trails by location
+    -view all trails on the dynamic google maps page
+    -each trail is also clickable on the card as well as the map marker
 
 ## Available Scripts
 
