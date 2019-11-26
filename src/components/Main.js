@@ -2,7 +2,7 @@ import React from 'react'
 import FilterPage from './FilterPage'
 import CardContainer from './CardContainer'
 import MapPage from './MapPage'
-import Body from './Body'
+
 
 require('dotenv').config()
 
@@ -76,9 +76,6 @@ export default class Main extends React.Component {
             </div>
 
           }
-          <Body />
-
-       
 
         </div>
       )

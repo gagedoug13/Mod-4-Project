@@ -1,20 +1,42 @@
 import React from 'react'
 import Main from './components/Main'
 import './App.css'
-import line from './My line.png'
+
+import LandingPage from './components/LandingPage'
+
+
 
 
 
 export default class App extends React.Component {
+
+  state = {
+    loggedIn: false
+  }
+  
   render() {
+    
+    const change = () => {
+      this.setState({
+        loggedIn: !this.state.loggedIn
+      })
+    }
+    
     return (
-      <div className="App">
-        <div className="header">
-          <img className = "logo" src={line}>
-          
-          </img>
+      <div classname="app">
+
+        {this.state.loggedIn
+
+        ?<div>
+          <Main />
         </div>
-        <Main />
+
+        :
+
+        <div>
+          <LandingPage change={change} />
+        </div>
+        }
       </div>
     )
   }

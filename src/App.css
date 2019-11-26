@@ -120,4 +120,36 @@ button {
   background-position-y: 28%;
 }
 
+.landingPage {
+  background: url('https://images.unsplash.com/photo-1524654458049-e36be0721fa2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=200') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 
+}
+
+.userForm {
+  width: 40vh;
+  height: 50vh;
+  border: 2px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  background: grey;
+}
+
+.username, .email {
+  margin-bottom: 3rem;
+}
+
+.goToHome {
+  margin-top: 2rem;
+}
+
+.formDiv {
+  height: 50vh;
+}

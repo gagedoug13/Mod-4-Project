@@ -10,8 +10,7 @@ require('dotenv').config()
         }
 
        
-          
-        displayMarkers = () => {
+         displayMarkers = () => {
           return this.props.trails.map((store, index) => {
             //   console.log(store.url)
             return <Marker key={index} id={index} position={{
