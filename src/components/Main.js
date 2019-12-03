@@ -1,12 +1,11 @@
 import React from 'react'
-// import FilterPage from './FilterPage'
-// import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
+
 import CardContainer from './CardContainer'
 import MapPage from './MapPage'
 import Media from './Media'
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-// import LandingPage from './LandingPage'
-import App from '../App'
+import {Route, Link} from "react-router-dom";
+import LandingPage from './LandingPage';
+
 
 
 require('dotenv').config()
@@ -37,7 +36,6 @@ export default class Main extends React.Component {
       this.setState({
         searchTerm: event.target.value
       })
-      console.log("searchTerm", this.state.searchTerm, "value", event.target.value)
     }
     
   
@@ -53,10 +51,9 @@ export default class Main extends React.Component {
 
   
     render() {
-
+      console.log(this.state.trails)
       return (
         <div className="main">
-          <Router>
             <div>
                 <div className="ulDiv">
                 <ul className="ulButtons">
@@ -64,33 +61,27 @@ export default class Main extends React.Component {
                         <Link to="/"><button className="navButtons">Go Back</button></Link>
                     </li>
                     <li>
-                        <Link to="/main"><button className="navButtons">Media</button></Link>
+                        <Link to="/main/media"><button className="navButtons">Media</button></Link>
                     </li>
                     <li>
-                        <Link to="/trails"><button className="navButtons">All Trails</button></Link>
+                        <Link to="/main"><button className="navButtons">All Trails</button></Link>
                     </li>
                     <li>
-                        <Link to="/maps"><button className="navButtons">Map</button></Link>
+                        <Link to="/main/maps"><button className="navButtons">Map</button></Link>
                     </li>
                 </ul>
                 </div>
-              <Switch>
                 
-                <Route path="/main" render={() => <Media news={this.state.news} /> }/>
-                <Route path="/media" render={() => <Media news={this.state.news} /> }/>
-
-                <Route path="/trails" render={() => <CardContainer trails={this.filteredTrails()} />}
+                <Route exact path="/main" render={() => <CardContainer trails={this.filteredTrails()}
                                                                   searchTerm={this.state.searchTerm} 
                                                                   updateSearchTerm={this.updateSearchTerm}
-                                                                  />
-                <Route path="/maps" render={() => <MapPage  trails={this.state.trails}/>} />
-                    
-                <Route exact path="/">
-                    <App />
-                </Route>
-            </Switch>
-        </div>
-        </Router>
+                                                                /> } />
+              
+                <Route path="/main/media" render={() => <Media news={this.state.news} /> }/>
+
+                <Route path="/main/maps" render={() => <MapPage  trails={this.state.trails}/>} />
+               
+            </div>
         </div>
       )
     }

@@ -7,7 +7,8 @@ export default function CardContainer(props) {
 		return <div key={trail.id}>
 		  <Card trail={trail} /> 
 		</div>
-	  })
+    })
+    
     return (
         <div>
           <div className="filterPage">

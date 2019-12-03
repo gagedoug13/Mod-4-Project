@@ -9,7 +9,7 @@ export default function Card(props) {
                 <h5 className="card-title">{props.trail.name} | {props.trail.location} | {props.trail.difficulty}</h5>
                 <p className="trail-summary">{props.trail.summary}</p>
                 <p className="trail-condition">Status: {props.trail.conditionStatus} | Ascent: {props.trail.ascent} | Descent: {props.trail.descent}</p>
-                <a href={props.trail.url} rel="noopener noreferrer" target = "_blank" className="btn btn-primary">Favorite</a>
+                <a href={props.trail.url} rel="noopener noreferrer" target = "_blank" className="btn btn-primary">View Trail</a>
             </div>
     </div>
     )

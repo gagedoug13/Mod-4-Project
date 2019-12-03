@@ -230,5 +230,9 @@ button {
 }
 
 .mapContainer {
-  margin-left: 2.5rem;
+  margin-left: 2.8rem;
+}
+
+.card-img {
+  height: 100%;
 }
