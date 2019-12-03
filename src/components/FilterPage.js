@@ -1,20 +1,19 @@
-import React from 'react'
+// import React from 'react'
 
-export default function FilterPage(props) {
+// export default function FilterPage(props) {
 
-    return (
-        <div className="filterPage">
+//     return (
+//         <div className="filterPage">
             
-                <form className="filterForm">
-                    <input 
-                    type="text" 
-                    placeholder="Trails by Name / Location"
-                    value = {props.searchTerm}
-                    onChange={props.updateSearchTerm}
-                    />
-                </form>
-                <button onClick={() => props.changeMaps()}
-                >Toggle Switch</button>
-        </div>
-    )
-}
+//                 <form className="filterForm">
+//                     <input 
+//                     type="text" 
+//                     placeholder="Trails by Name / Location"
+//                     value = {props.searchTerm}
+//                     onChange={props.updateSearchTerm}
+//                     />
+//                 </form>
+               
+//         </div>
+//     )
+// }

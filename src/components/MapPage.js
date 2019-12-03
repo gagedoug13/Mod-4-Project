@@ -24,10 +24,11 @@ require('dotenv').config()
         render() {
 
             const mapStyles = {
-                width: '97.8%',
-                height: '70%',
+                width: '95%',
+                height: '85%',
               };
           return (
+            <div className="mapContainer">
               <Map className="actualMap"
                 google={this.props.google}
                 zoom={8}
@@ -36,6 +37,7 @@ require('dotenv').config()
               >
                 {this.displayMarkers()}
               </Map>
+            </div>
           );
         }
       }

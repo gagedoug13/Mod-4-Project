@@ -1,42 +1,35 @@
 import React from 'react'
 import Main from './components/Main'
+import LandingPage from './components/LandingPage'
 import './App.css'
 
-import LandingPage from './components/LandingPage'
-
-
-
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 
 export default class App extends React.Component {
 
-  state = {
-    loggedIn: false
-  }
-  
   render() {
     
-    const change = () => {
-      this.setState({
-        loggedIn: !this.state.loggedIn
-      })
-    }
+    // const change = () => {
+    //   this.setState({
+    //     loggedIn: !this.state.loggedIn
+    //   })
+    // }
     
     return (
-      <div classname="app">
+      <div className="app">
 
-        {this.state.loggedIn
+        <Router>
 
-        ?<div>
-          <Main />
-        </div>
-
-        :
-
-        <div>
-          <LandingPage change={change} />
-        </div>
-        }
+        <Route exact path="/" render={() => <LandingPage />}>
+          
+        </Route>
+          
+        <Route path="/main" render={() => <Main />}/> 
+      
+    
+        </Router>
+        
       </div>
     )
   }
