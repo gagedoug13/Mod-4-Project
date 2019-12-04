@@ -12,7 +12,6 @@ require('dotenv').config()
        
          displayMarkers = () => {
           return this.props.trails.map((store, index) => {
-            //   console.log(store.url)
             return <Marker key={index} id={index} position={{
              lat: store.latitude,
              lng: store.longitude
@@ -27,7 +26,7 @@ require('dotenv').config()
                 width: '95%',
                 height: '85%',
               };
-              
+
           return (
             <div className="mapContainer">
               <Map className="actualMap"

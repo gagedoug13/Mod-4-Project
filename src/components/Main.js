@@ -8,7 +8,7 @@ import {Route, Link} from "react-router-dom";
 require('dotenv').config()
 
 const newsUrl = `https://newsapi.org/v2/everything?q=mountain+biking+colorado&from=2019-11-10&to=2019-12-30&apikey=${process.env.REACT_APP_NEWS_KEY}`
-const bikingUrl = `https://www.mtbproject.com/data/get-trails?lat=40.0274&lon=-105.2519&maxDistance=200&key=${process.env.REACT_APP_BIKING_KEY}&maxResults=100`
+const bikingUrl = `https://www.mtbproject.com/data/get-trails?lat=40.0274&lon=-105.2519&maxDistance=200&key=${process.env.REACT_APP_BIKING_KEY}&maxResults=200`
 
 export default class Main extends React.Component {
 

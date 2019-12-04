@@ -118,7 +118,7 @@ button {
   background: url('https://images.unsplash.com/photo-1524654458049-e36be0721fa2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=200') ;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   display: flex; 
   justify-content: center;
   align-items: center;
@@ -232,3 +232,16 @@ button {
   margin-bottom: 3rem;
 }
 
+.username {
+  margin-top: 3rem;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 10vh;
+  font-family: 'Roboto', serif;
+  font-size: 80px;
+}
