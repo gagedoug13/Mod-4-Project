@@ -12,7 +12,6 @@ export default function CardContainer(props) {
     return (
         <div>
           <div className="filterPage">
-            
             <form className="filterForm">
                 <input 
                 type="text" 
@@ -21,7 +20,6 @@ export default function CardContainer(props) {
                 onChange={props.updateSearchTerm}
                 />
             </form>
-           
         </div>
         <div className="cardContainer">
             {eachTrail}

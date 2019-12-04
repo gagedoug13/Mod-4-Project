@@ -8,7 +8,6 @@ export default function MediaCard(props) {
                 <div className="card-img-overlay">
                 <h5 className="card-title">{props.article.title}</h5>
                 <p className="card-text">{props.article.description}</p>
-                    <p className="card-text"></p>
                 </div>
             </div></a>
         </div>

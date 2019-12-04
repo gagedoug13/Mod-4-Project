@@ -4,14 +4,11 @@ import CardContainer from './CardContainer'
 import MapPage from './MapPage'
 import Media from './Media'
 import {Route, Link} from "react-router-dom";
-import LandingPage from './LandingPage';
-
-
 
 require('dotenv').config()
-const newsUrl = `https://newsapi.org/v2/everything?q=mountain+biking+trails+colorado&apikey=ee6b64100f3f45d7bb6c92eaa1e29969`
 
-const url = `https://www.mtbproject.com/data/get-trails?lat=40.0274&lon=-105.2519&maxDistance=200&key=${process.env.REACT_APP_BIKING_KEY}&maxResults=100`
+const newsUrl = `https://newsapi.org/v2/everything?q=mountain+biking+colorado&from=2019-11-10&to=2019-12-30&apikey=${process.env.REACT_APP_NEWS_KEY}`
+const bikingUrl = `https://www.mtbproject.com/data/get-trails?lat=40.0274&lon=-105.2519&maxDistance=200&key=${process.env.REACT_APP_BIKING_KEY}&maxResults=100`
 
 export default class Main extends React.Component {
 
@@ -38,9 +35,8 @@ export default class Main extends React.Component {
       })
     }
     
-  
     componentDidMount() {
-      fetch(url)
+      fetch(bikingUrl)
         .then(response => response.json())
         .then(response =>  this.setState({ trails: response.trails }))
       fetch(newsUrl)
@@ -48,10 +44,8 @@ export default class Main extends React.Component {
         .then(response => this.setState({ news: response.articles }))
       }
    
-
   
     render() {
-      console.log(this.state.trails)
       return (
         <div className="main">
             <div>

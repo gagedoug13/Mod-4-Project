@@ -27,6 +27,7 @@ require('dotenv').config()
                 width: '95%',
                 height: '85%',
               };
+              
           return (
             <div className="mapContainer">
               <Map className="actualMap"
@@ -41,7 +42,6 @@ require('dotenv').config()
           );
         }
       }
-
 
     export default GoogleApiWrapper({
         apiKey: `${process.env.REACT_APP_MAPS_KEY}`
