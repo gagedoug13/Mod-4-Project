@@ -1,10 +1,16 @@
-Welcome to My Line! With this app, you can view all mountain biking trails within a 150 mile radius of Denver Colorado. As a user, you have the ability to 
+Welcome to My Line! With this app, you can see all current mountain biking news as well as the trails within 200 miles of your location.
+This app utilizes the Google Maps Dynamic Map API, MBT trails API, Google News API, and the Geo-Locator API.
 
-    -view all trails
-    -filter trails by trail name
-    -filter trails by location
-    -view all trails on the dynamic google maps page
-    -each trail is also clickable on the card as well as the map marker
+As a user, you have the ability to 
+
+    -create an account with a username, email, and password.
+    -view mountain biking trails near your location.
+    -filter the trails by either trail name or location.
+    -view trails on the dynamic google maps page (clickable).
+    -view and navigate the media page that displays mountain biking news.
+
+
+    
 
 ## Available Scripts
 
